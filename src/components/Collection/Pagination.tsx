@@ -57,6 +57,7 @@ export default function PaginatedItems({ itemsPerPage, apiString }: { itemsPerPa
             await fetch(apiString)
                 .then(res => res.json())
                 .then(all => setProds(all.products))
+                .catch(err => console.log(err))
             dispatch(showLoader())
         }
         getProds()
