@@ -33,7 +33,7 @@ import io from 'socket.io-client'
 import AdminChat from './pages/adminChat/AdminChat';
 import SignupAdminPage from './pages/SignupAdminPage/SignupAdminPage';
 import Reset from './pages/resetPassword/Reset';
-const socket = io('/')
+const socket = io('https://myway-shop-app-api.onrender.com')
 function App() {
   const dispatch = useDispatch()
   const navigate = useNavigate()
