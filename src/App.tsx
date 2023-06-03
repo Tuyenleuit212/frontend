@@ -33,7 +33,7 @@ import io from 'socket.io-client'
 import AdminChat from './pages/adminChat/AdminChat';
 import SignupAdminPage from './pages/SignupAdminPage/SignupAdminPage';
 import Reset from './pages/resetPassword/Reset';
-const socket = io('https://shop-myway-backend.vercel.app')
+const socket = io('https://shop-myway-backend.onrender.com')
 function App() {
   const dispatch = useDispatch()
   const navigate = useNavigate()
