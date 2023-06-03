@@ -53,6 +53,7 @@ export default function PaginatedItems({ itemsPerPage, apiString }: { itemsPerPa
     };
     useEffect(() => {
         const getProds = async () => {
+            console.log("hello")
             // dispatch(hideLoader())
             await fetch(apiString)
                 .then(res => res.json())
