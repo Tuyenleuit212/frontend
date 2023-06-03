@@ -7,7 +7,7 @@ import Loader from '../loader/Loader';
 import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from '../../store/store';
 import { hideLoader, showLoader } from '../../slices/loaderSlice';
-
+import axios from 'axios';
 function Items({ currentItems }: { currentItems: PRODUCT[] }) {
     return (
         <>
