@@ -55,6 +55,8 @@ export default function PaginatedItems({ itemsPerPage, apiString }: { itemsPerPa
         const getProds = async () => {
             console.log("hello")
             // dispatch(hideLoader())
+            const res = await axios.get(apiString)
+            console.log(res)
             await fetch(apiString)
                 .then(res => res.json())
                 .then(all => setProds(all.products))
@@ -70,7 +72,7 @@ export default function PaginatedItems({ itemsPerPage, apiString }: { itemsPerPa
     }, [searchParams])
     return (
         <>
-            {handleLoader.loader && <Loader />}
+            {/* {handleLoader.loader && <Loader />} */}
             <Items currentItems={currentItems} />
             <ReactPaginate
                 breakLabel="..."
